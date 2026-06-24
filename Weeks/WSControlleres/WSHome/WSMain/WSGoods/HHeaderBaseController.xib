@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="OGO-Us-SrU" userLabel="File's Owner" customClass="KMCardController" customModule="Looks" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="bc8-wa-irG" id="YaW-Tw-Gwf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="I0q-JT-qmD" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bc8-wa-irG">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weixinSocket" translatesAutoresizingMaskIntoConstraints="NO" id="eJH-hC-CLu">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjU-u2-iAH">
+                    <rect key="frame" x="46" y="744" width="301" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="listShare"/>
+                    <connections>
+                        <action selector="_nextClick" destination="OGO-Us-SrU" eventType="touchUpInside" id="f5d-DO-uwQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="eL6-Gc-k4z"/>
+            <color key="backgroundColor" red="0.9294117647058824" green="0.00392156862745098" blue="0.8" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="eL6-Gc-k4z" firstAttribute="trailing" secondItem="wjU-u2-iAH" secondAttribute="trailing" constant="45.95" id="UWG-Wy-Mu2"/>
+                <constraint firstItem="eL6-Gc-k4z" firstAttribute="trailing" secondItem="eJH-hC-CLu" secondAttribute="trailing" id="gcb-fK-lU9"/>
+                <constraint firstAttribute="bottom" secondItem="eJH-hC-CLu" secondAttribute="bottom" id="3Wt-au-HTa"/>
+                <constraint firstItem="eJH-hC-CLu" firstAttribute="top" secondItem="bc8-wa-irG" secondAttribute="top" id="3lg-PU-dTf"/>
+                <constraint firstItem="wjU-u2-iAH" firstAttribute="leading" secondItem="eL6-Gc-k4z" secondAttribute="leading" constant="45.98" id="nFW-8c-NGo"/>
+                <constraint firstItem="eJH-hC-CLu" firstAttribute="leading" secondItem="eL6-Gc-k4z" secondAttribute="leading" id="inP-2G-umS"/>
+                <constraint firstItem="eL6-Gc-k4z" firstAttribute="bottom" secondItem="wjU-u2-iAH" secondAttribute="bottom" constant="19.99" id="LBc-oI-3Ln"/>
+            </constraints>
+            <point key="canvasLocation" x="91" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="weixinSocket" width="390" height="844"/>
+        <image name="listShare" width="298" height="54"/>
+    </resources>
+</document>

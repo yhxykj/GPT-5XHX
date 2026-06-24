@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="OGO-Us-SrU" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="I0q-JT-qmD" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YRa-DU-Zvz" customClass="ILManagerCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q8r-TA-jRm">
+                        <rect key="frame" x="15" y="42.666666666666657" width="313" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBP-I2-bmF">
+                                <rect key="frame" x="21" y="21" width="233" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.00784313725490196" green="0.7803921568627451" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWi-Gx-eM8">
+                                <rect key="frame" x="269" y="19" width="44" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44.01" id="4Et-7C-ToR"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="tableYback"/>
+                                <connections>
+                                    <action selector="down:" destination="YRa-DU-Zvz" eventType="touchUpInside" id="LpO-iN-6T3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8862745098039215" green="0.30196078431372547" blue="0.3137254901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hBP-I2-bmF" firstAttribute="centerY" secondItem="Q8r-TA-jRm" secondAttribute="centerY" id="LBk-qz-hY9"/>
+                            <constraint firstItem="EWi-Gx-eM8" firstAttribute="leading" secondItem="hBP-I2-bmF" secondAttribute="trailing" constant="14.99" id="vjS-bf-oAJ"/>
+                            <constraint firstItem="EWi-Gx-eM8" firstAttribute="centerY" secondItem="Q8r-TA-jRm" secondAttribute="centerY" id="laP-p3-qdq"/>
+                            <constraint firstAttribute="trailing" secondItem="EWi-Gx-eM8" secondAttribute="trailing" id="ika-2c-FOZ"/>
+                            <constraint firstAttribute="height" constant="59.99" id="pF0-Fr-6pS"/>
+                            <constraint firstItem="hBP-I2-bmF" firstAttribute="leading" secondItem="Q8r-TA-jRm" secondAttribute="leading" constant="21.03" id="Y97-VY-kUS"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="fw6-X4-XSN"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Q8r-TA-jRm" secondAttribute="trailing" constant="15.04" id="X2z-kX-AAY"/>
+                <constraint firstItem="Q8r-TA-jRm" firstAttribute="leading" secondItem="YRa-DU-Zvz" secondAttribute="leading" constant="15.01" id="YyF-4t-7bR"/>
+                <constraint firstItem="Q8r-TA-jRm" firstAttribute="centerY" secondItem="YRa-DU-Zvz" secondAttribute="centerY" id="5Ql-g2-U8w"/>
+            </constraints>
+            <size key="customSize" width="343" height="145"/>
+            <connections>
+                <outlet property="labeel" destination="hBP-I2-bmF" id="x6O-2K-RuQ"/>
+            </connections>
+            <point key="canvasLocation" x="254.61538461538461" y="-39.454976303317537"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="tableYback" width="15" height="8"/>
+    </resources>
+</document>

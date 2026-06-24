@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="OGO-Us-SrU" userLabel="File's Owner" customClass="INScreenAudioController" customModule="Weeks" customModuleProvider="target">
+            <connections>
+                <outlet property="gressView" destination="QoB-mR-k0D" id="JcK-Hy-iNQ"/>
+                <outlet property="titlelabel" destination="evE-OL-Dda" id="9UG-WP-wGe"/>
+                <outlet property="view" destination="bc8-wa-irG" id="YaW-Tw-Gwf"/>
+                <outlet property="webView" destination="hbA-Wc-81o" id="KwC-uD-s7b"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="I0q-JT-qmD" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bc8-wa-irG">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2lZ-Ap-vvz">
+                    <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYP-Vb-6Wx">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="54.990000000000002" id="2u7-dR-ojS"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="alifastLijiqianjinRobot"/>
+                            <connections>
+                                <action selector="back:" destination="OGO-Us-SrU" eventType="touchUpInside" id="OvC-Dy-m7t"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evE-OL-Dda">
+                            <rect key="frame" x="187.33333333333334" y="11.666666666666664" width="15.333333333333343" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QoB-mR-k0D">
+                            <rect key="frame" x="0.0" y="42" width="390" height="2"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1.98" id="Hda-lq-9FU"/>
+                            </constraints>
+                        </progressView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="evE-OL-Dda" firstAttribute="centerY" secondItem="2lZ-Ap-vvz" secondAttribute="centerY" id="6uy-gO-ChM"/>
+                        <constraint firstItem="evE-OL-Dda" firstAttribute="centerX" secondItem="2lZ-Ap-vvz" secondAttribute="centerX" id="Bvk-55-agF"/>
+                        <constraint firstAttribute="trailing" secondItem="QoB-mR-k0D" secondAttribute="trailing" id="Gns-xj-Os9"/>
+                        <constraint firstItem="zYP-Vb-6Wx" firstAttribute="top" secondItem="2lZ-Ap-vvz" secondAttribute="top" id="NyL-3S-tKX"/>
+                        <constraint firstAttribute="bottom" secondItem="QoB-mR-k0D" secondAttribute="bottom" id="Z6P-LL-7qy"/>
+                        <constraint firstAttribute="bottom" secondItem="zYP-Vb-6Wx" secondAttribute="bottom" id="bgn-em-cf3"/>
+                        <constraint firstItem="zYP-Vb-6Wx" firstAttribute="leading" secondItem="2lZ-Ap-vvz" secondAttribute="leading" id="lSD-Ur-X32"/>
+                        <constraint firstItem="QoB-mR-k0D" firstAttribute="leading" secondItem="2lZ-Ap-vvz" secondAttribute="leading" id="lgC-YG-37J"/>
+                        <constraint firstAttribute="height" constant="44.020000000000003" id="zOk-Jh-fWK"/>
+                    </constraints>
+                </view>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbA-Wc-81o">
+                    <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="eL6-Gc-k4z"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2lZ-Ap-vvz" secondAttribute="trailing" id="3pR-mU-6G3"/>
+                <constraint firstItem="eL6-Gc-k4z" firstAttribute="bottom" secondItem="hbA-Wc-81o" secondAttribute="bottom" id="5kf-9E-duh"/>
+                <constraint firstItem="hbA-Wc-81o" firstAttribute="leading" secondItem="eL6-Gc-k4z" secondAttribute="leading" id="9fq-33-foW"/>
+                <constraint firstItem="2lZ-Ap-vvz" firstAttribute="leading" secondItem="eL6-Gc-k4z" secondAttribute="leading" id="TFz-hK-sZs"/>
+                <constraint firstItem="eL6-Gc-k4z" firstAttribute="trailing" secondItem="hbA-Wc-81o" secondAttribute="trailing" id="WUy-R0-9eI"/>
+                <constraint firstItem="2lZ-Ap-vvz" firstAttribute="top" secondItem="eL6-Gc-k4z" secondAttribute="top" id="op7-xg-PGt"/>
+                <constraint firstItem="hbA-Wc-81o" firstAttribute="top" secondItem="2lZ-Ap-vvz" secondAttribute="bottom" id="zcg-OE-7kK"/>
+            </constraints>
+            <point key="canvasLocation" x="131" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alifastLijiqianjinRobot" width="10" height="17"/>
+    </resources>
+</document>

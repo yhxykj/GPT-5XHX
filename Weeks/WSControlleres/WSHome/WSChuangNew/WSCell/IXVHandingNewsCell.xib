@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="OGO-Us-SrU" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="I0q-JT-qmD" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YRa-DU-Zvz" customClass="IXVHandingNewsCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="144" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="144" height="82"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDH-ms-uzb">
+                        <rect key="frame" x="5" y="31.333333333333336" width="134" height="19.333333333333336"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.00784313725490196" green="0.7803921568627451" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="fw6-X4-XSN"/>
+            <constraints>
+                <constraint firstItem="LDH-ms-uzb" firstAttribute="leading" secondItem="YRa-DU-Zvz" secondAttribute="leading" constant="4.97" id="ozu-LD-1zK"/>
+                <constraint firstItem="LDH-ms-uzb" firstAttribute="centerX" secondItem="YRa-DU-Zvz" secondAttribute="centerX" id="YXg-dE-xPq"/>
+                <constraint firstItem="LDH-ms-uzb" firstAttribute="centerY" secondItem="YRa-DU-Zvz" secondAttribute="centerY" id="kvt-sd-t8O"/>
+                <constraint firstAttribute="trailing" secondItem="LDH-ms-uzb" secondAttribute="trailing" constant="4.98" id="600-pN-HaK"/>
+            </constraints>
+            <size key="customSize" width="144" height="82"/>
+            <connections>
+                <outlet property="label" destination="LDH-ms-uzb" id="cV0-yB-3oT"/>
+            </connections>
+            <point key="canvasLocation" x="153.84615384615384" y="-44.7867298578199"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="OGO-Us-SrU" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="I0q-JT-qmD" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5EJ-wk-xuU" customClass="PSULaunchView" customModule="Weeks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="661"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uCT-cE-WMh">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="661"/>
+                    <color key="backgroundColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="RuY-Me-cWw" appends="YES" id="k7F-NP-ntT"/>
+                    </connections>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLJ-uq-Dae">
+                    <rect key="frame" x="0.0" y="201" width="393" height="460"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择风格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRk-nd-G9H">
+                            <rect key="frame" x="161.66666666666666" y="18" width="70" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20.02" id="wZo-C7-4EO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="b68-JP-BSp">
+                            <rect key="frame" x="0.0" y="46" width="393" height="414"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="b68-JP-BSp" firstAttribute="leading" secondItem="NLJ-uq-Dae" secondAttribute="leading" id="2vw-Rv-Qjb"/>
+                        <constraint firstAttribute="bottom" secondItem="b68-JP-BSp" secondAttribute="bottom" id="38b-1a-Dad"/>
+                        <constraint firstAttribute="height" constant="460.01999999999998" id="6fE-6h-esu"/>
+                        <constraint firstItem="b68-JP-BSp" firstAttribute="top" secondItem="KRk-nd-G9H" secondAttribute="bottom" constant="8.0199999999999996" id="TUS-9b-gVI"/>
+                        <constraint firstAttribute="trailing" secondItem="b68-JP-BSp" secondAttribute="trailing" id="aJb-1n-DU0"/>
+                        <constraint firstItem="KRk-nd-G9H" firstAttribute="centerX" secondItem="NLJ-uq-Dae" secondAttribute="centerX" id="nVT-Vn-AuI"/>
+                        <constraint firstItem="KRk-nd-G9H" firstAttribute="top" secondItem="NLJ-uq-Dae" secondAttribute="top" constant="17.98" id="vWn-CU-33v"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="uCT-cE-WMh" firstAttribute="top" secondItem="5EJ-wk-xuU" secondAttribute="top" id="9gS-aT-NfU"/>
+                <constraint firstItem="uCT-cE-WMh" firstAttribute="leading" secondItem="5EJ-wk-xuU" secondAttribute="leading" id="Ciw-Wv-qSA"/>
+                <constraint firstItem="NLJ-uq-Dae" firstAttribute="leading" secondItem="5EJ-wk-xuU" secondAttribute="leading" id="DL2-Yo-Sux"/>
+                <constraint firstAttribute="bottom" secondItem="uCT-cE-WMh" secondAttribute="bottom" id="ast-V5-62z"/>
+                <constraint firstAttribute="trailing" secondItem="uCT-cE-WMh" secondAttribute="trailing" id="d6m-y8-a19"/>
+                <constraint firstAttribute="bottom" secondItem="NLJ-uq-Dae" secondAttribute="bottom" id="qRE-93-r6E"/>
+                <constraint firstAttribute="trailing" secondItem="NLJ-uq-Dae" secondAttribute="trailing" id="tR7-km-J4V"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="b68-JP-BSp" id="Jl7-me-kH8"/>
+            </connections>
+            <point key="canvasLocation" x="96.946564885496173" y="349.64788732394368"/>
+        </view>
+        <tapGestureRecognizer id="RuY-Me-cWw">
+            <connections>
+                <action selector="dissmiss:" destination="5EJ-wk-xuU" id="XMn-Bb-pNJ"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>
