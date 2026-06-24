@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="OGO-Us-SrU" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="I0q-JT-qmD" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YRa-DU-Zvz" customClass="FZEChangePlayCell" customModule="Weeks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="241" height="119"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="241" height="119"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="beV-lV-P6W">
+                        <rect key="frame" x="0.0" y="59" width="241" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1.02" id="cTR-Et-93M"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJx-2D-byc">
+                        <rect key="frame" x="16" y="38" width="209" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.989999999999998" id="FuY-P1-pRu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R91-gR-SHp">
+                        <rect key="frame" x="16" y="61" width="209" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18.010000000000002" id="hlT-Ry-Dzy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="fw6-X4-XSN"/>
+            <color key="backgroundColor" red="0.33725490196078434" green="0.47450980392156861" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="R91-gR-SHp" secondAttribute="trailing" constant="16.050000000000001" id="1gx-2l-cbc"/>
+                <constraint firstItem="beV-lV-P6W" firstAttribute="leading" secondItem="YRa-DU-Zvz" secondAttribute="leading" id="H1v-ng-1YC"/>
+                <constraint firstItem="beV-lV-P6W" firstAttribute="top" secondItem="aJx-2D-byc" secondAttribute="bottom" id="MUV-gg-sHX"/>
+                <constraint firstItem="R91-gR-SHp" firstAttribute="leading" secondItem="YRa-DU-Zvz" secondAttribute="leading" constant="16.050000000000001" id="Xso-NO-SCg"/>
+                <constraint firstItem="R91-gR-SHp" firstAttribute="top" secondItem="beV-lV-P6W" secondAttribute="bottom" constant="0.97999999999999998" id="dyc-uU-iJ6"/>
+                <constraint firstItem="aJx-2D-byc" firstAttribute="leading" secondItem="YRa-DU-Zvz" secondAttribute="leading" constant="15.99" id="jqk-4k-hUX"/>
+                <constraint firstItem="beV-lV-P6W" firstAttribute="centerY" secondItem="YRa-DU-Zvz" secondAttribute="centerY" id="mSW-Cf-TRT"/>
+                <constraint firstAttribute="trailing" secondItem="beV-lV-P6W" secondAttribute="trailing" id="oIQ-BQ-Wb0"/>
+                <constraint firstAttribute="trailing" secondItem="aJx-2D-byc" secondAttribute="trailing" constant="15.98" id="ufF-Kf-60i"/>
+            </constraints>
+            <size key="customSize" width="241" height="119"/>
+            <connections>
+                <outlet property="aiDetailslabel" destination="R91-gR-SHp" id="8yj-72-AYY"/>
+                <outlet property="aiNamelabel" destination="aJx-2D-byc" id="28k-1H-RdF"/>
+            </connections>
+            <point key="canvasLocation" x="274.04580152671753" y="51.056338028169016"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="OGO-Us-SrU" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="I0q-JT-qmD" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="529" id="E2b-Ix-a1q" customClass="RWImageUploadCell" customModule="Weeks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="472" height="529"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E2b-Ix-a1q" id="Sxw-Y5-kOn">
+                <rect key="frame" x="0.0" y="0.0" width="472" height="529"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="绘画头" translatesAutoresizingMaskIntoConstraints="NO" id="yhc-nb-Jyj" customClass="YYAnimatedImageView">
+                        <rect key="frame" x="54" y="12" width="358" height="455.66666666666669"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="yhc-nb-Jyj" secondAttribute="height" multiplier="297:378" id="P3r-G5-Mqv"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBw-r2-7oP">
+                        <rect key="frame" x="54" y="12" width="358" height="455.66666666666669"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="tapImage:" destination="E2b-Ix-a1q" eventType="touchUpInside" id="o6X-qy-JxH"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ktv-d6-Vvl">
+                        <rect key="frame" x="169" y="473.66666666666669" width="128" height="49.000000000000057"/>
+                        <subviews>
+                            <button opaque="NO" tag="501" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjm-SI-Ux7">
+                                <rect key="frame" x="7" y="0.0" width="37.666666666666664" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37.979999999999997" id="Vfu-ar-3fO"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="robotVertical"/>
+                                <connections>
+                                    <action selector="download:" destination="E2b-Ix-a1q" eventType="touchUpInside" id="AKy-Jq-Wx4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="503" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rm5-2W-Kkn">
+                                <rect key="frame" x="44.666666666666686" y="0.0" width="38.333333333333343" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38.030000000000001" id="sx6-Zg-gKu"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="unselectStarkapMain"/>
+                                <connections>
+                                    <action selector="deleteClick:" destination="E2b-Ix-a1q" eventType="touchUpInside" id="5r7-9H-RBX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="505" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cDc-RE-I5y">
+                                <rect key="frame" x="83.000000000000028" y="0.0" width="38" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="37.979999999999997" id="F4g-bi-ooX"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="unselectListStarkap"/>
+                                <connections>
+                                    <action selector="itemclick:" destination="E2b-Ix-a1q" eventType="touchUpInside" id="xfH-Z7-6tL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cDc-RE-I5y" firstAttribute="top" secondItem="ktv-d6-Vvl" secondAttribute="top" id="3Xt-bB-SA0"/>
+                            <constraint firstAttribute="bottom" secondItem="fjm-SI-Ux7" secondAttribute="bottom" id="8Ar-Ev-5qE"/>
+                            <constraint firstAttribute="height" constant="49.009999999999998" id="Hkz-AZ-hMD"/>
+                            <constraint firstItem="fjm-SI-Ux7" firstAttribute="top" secondItem="ktv-d6-Vvl" secondAttribute="top" id="KyS-ml-MRs"/>
+                            <constraint firstAttribute="bottom" secondItem="Rm5-2W-Kkn" secondAttribute="bottom" id="PIm-ZC-p1t"/>
+                            <constraint firstItem="cDc-RE-I5y" firstAttribute="leading" secondItem="Rm5-2W-Kkn" secondAttribute="trailing" id="QiV-3Q-LQq"/>
+                            <constraint firstItem="Rm5-2W-Kkn" firstAttribute="centerX" secondItem="ktv-d6-Vvl" secondAttribute="centerX" id="SHO-O9-r1O"/>
+                            <constraint firstAttribute="bottom" secondItem="cDc-RE-I5y" secondAttribute="bottom" id="ZRe-ut-1fi"/>
+                            <constraint firstItem="Rm5-2W-Kkn" firstAttribute="top" secondItem="ktv-d6-Vvl" secondAttribute="top" id="mqz-X3-Pzo"/>
+                            <constraint firstItem="fjm-SI-Ux7" firstAttribute="leading" secondItem="ktv-d6-Vvl" secondAttribute="leading" constant="7" id="qEI-kq-pHL"/>
+                            <constraint firstAttribute="width" constant="128" id="tYV-Hx-p5X"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="centerDetails" translatesAutoresizingMaskIntoConstraints="NO" id="2m0-jp-ydO">
+                        <rect key="frame" x="16" y="21" width="28" height="28"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SBw-r2-7oP" firstAttribute="bottom" secondItem="yhc-nb-Jyj" secondAttribute="bottom" id="2JJ-FG-DoP"/>
+                    <constraint firstItem="SBw-r2-7oP" firstAttribute="top" secondItem="yhc-nb-Jyj" secondAttribute="top" id="7hR-L6-WeV"/>
+                    <constraint firstItem="SBw-r2-7oP" firstAttribute="leading" secondItem="yhc-nb-Jyj" secondAttribute="leading" id="FRy-Sl-4p0"/>
+                    <constraint firstAttribute="trailing" secondItem="yhc-nb-Jyj" secondAttribute="trailing" constant="38.969999999999999" id="LgC-NE-uue"/>
+                    <constraint firstItem="ktv-d6-Vvl" firstAttribute="centerX" secondItem="yhc-nb-Jyj" secondAttribute="centerX" id="O1O-dP-pNO"/>
+                    <constraint firstItem="2m0-jp-ydO" firstAttribute="leading" secondItem="Sxw-Y5-kOn" secondAttribute="leading" constant="16.039999999999999" id="T7Y-pj-GaX"/>
+                    <constraint firstItem="yhc-nb-Jyj" firstAttribute="top" secondItem="Sxw-Y5-kOn" secondAttribute="top" constant="11.99" id="TDP-dA-L1z"/>
+                    <constraint firstItem="yhc-nb-Jyj" firstAttribute="leading" secondItem="Sxw-Y5-kOn" secondAttribute="leading" constant="53.990000000000002" id="UAc-23-wUX"/>
+                    <constraint firstAttribute="bottom" secondItem="ktv-d6-Vvl" secondAttribute="bottom" id="cYN-EW-JSd"/>
+                    <constraint firstItem="2m0-jp-ydO" firstAttribute="top" secondItem="Sxw-Y5-kOn" secondAttribute="top" constant="20.98" id="cqz-Iu-y9k"/>
+                    <constraint firstAttribute="bottom" secondItem="SBw-r2-7oP" secondAttribute="bottom" constant="54.979999999999997" id="kRT-eM-fjE"/>
+                    <constraint firstItem="SBw-r2-7oP" firstAttribute="trailing" secondItem="yhc-nb-Jyj" secondAttribute="trailing" id="tuH-ct-sqf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="itemsView" destination="ktv-d6-Vvl" id="ChJ-v8-YRY"/>
+                <outlet property="picImage" destination="yhc-nb-Jyj" id="bYO-q9-ocT"/>
+            </connections>
+            <point key="canvasLocation" x="203.07692307692307" y="170.97156398104264"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="centerDetails" width="28" height="28"/>
+        <image name="robotVertical" width="14" height="14"/>
+        <image name="unselectListStarkap" width="15" height="16"/>
+        <image name="unselectStarkapMain" width="15" height="16"/>
+        <image name="绘画头" width="358" height="223"/>
+    </resources>
+</document>
