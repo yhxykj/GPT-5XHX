@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="OGO-Us-SrU" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="I0q-JT-qmD" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YRa-DU-Zvz" customClass="CDetailsCell" customModule="Weeks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome0" translatesAutoresizingMaskIntoConstraints="NO" id="7gL-Kz-dTw">
+                        <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLL-v9-Tbb">
+                        <rect key="frame" x="22" y="588" width="344" height="88"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.32549019607843138" blue="0.52156862745098043" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="88.010000000000005" id="aPK-FW-NZF"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="fw6-X4-XSN"/>
+            <constraints>
+                <constraint firstItem="sLL-v9-Tbb" firstAttribute="centerX" secondItem="YRa-DU-Zvz" secondAttribute="centerX" id="6my-iG-dO5"/>
+                <constraint firstItem="7gL-Kz-dTw" firstAttribute="leading" secondItem="YRa-DU-Zvz" secondAttribute="leading" id="Jw2-4F-qNU"/>
+                <constraint firstAttribute="trailing" secondItem="7gL-Kz-dTw" secondAttribute="trailing" id="UiA-Pw-HGY"/>
+                <constraint firstAttribute="bottom" secondItem="7gL-Kz-dTw" secondAttribute="bottom" id="a4L-qw-GjC"/>
+                <constraint firstAttribute="trailing" secondItem="sLL-v9-Tbb" secondAttribute="trailing" constant="21.98" id="bGL-6b-6DY"/>
+                <constraint firstItem="7gL-Kz-dTw" firstAttribute="top" secondItem="YRa-DU-Zvz" secondAttribute="top" id="c4d-w4-Ojs"/>
+                <constraint firstAttribute="bottom" secondItem="sLL-v9-Tbb" secondAttribute="bottom" constant="36.020000000000003" id="pAT-so-VIc"/>
+                <constraint firstItem="sLL-v9-Tbb" firstAttribute="leading" secondItem="YRa-DU-Zvz" secondAttribute="leading" constant="22.010000000000002" id="vPD-8o-A4g"/>
+            </constraints>
+            <size key="customSize" width="388" height="712"/>
+            <connections>
+                <outlet property="Icon" destination="7gL-Kz-dTw" id="KXP-67-tc7"/>
+                <outlet property="button" destination="sLL-v9-Tbb" id="nX8-6s-26r"/>
+            </connections>
+            <point key="canvasLocation" x="219.84732824427479" y="36.619718309859159"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="welcome0" width="390" height="844"/>
+    </resources>
+</document>

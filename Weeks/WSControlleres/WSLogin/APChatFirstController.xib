@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="OGO-Us-SrU" userLabel="File's Owner" customClass="UNKRegisterController" customModule="Weeks" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="rrG-gn-Vec" id="wBd-jj-Zed"/>
+                <outlet property="button" destination="v8y-sB-255" id="nCj-dg-HXm"/>
+                <outlet property="view" destination="bc8-wa-irG" id="YaW-Tw-Gwf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="I0q-JT-qmD" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bc8-wa-irG">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alamofireSure" translatesAutoresizingMaskIntoConstraints="NO" id="SKs-6v-kyT">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IkJ-kn-iep">
+                    <rect key="frame" x="16" y="564" width="361" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="searchJiaoWelcome"/>
+                    <connections>
+                        <action selector="_seekLogin:" destination="OGO-Us-SrU" eventType="touchUpInside" id="2ii-ik-GQJ"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AkN-Tq-6b8">
+                    <rect key="frame" x="16" y="658" width="361" height="54"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKB-Wp-0L5">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="54"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="applogoRelationDelete_7"/>
+                            <connections>
+                                <action selector="_phoneClick:" destination="OGO-Us-SrU" eventType="touchUpInside" id="P8a-0K-MNd"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="53.990000000000002" id="AbY-vX-36z"/>
+                        <constraint firstItem="AKB-Wp-0L5" firstAttribute="top" secondItem="AkN-Tq-6b8" secondAttribute="top" id="FZR-P5-DNR"/>
+                        <constraint firstAttribute="trailing" secondItem="AKB-Wp-0L5" secondAttribute="trailing" id="eGf-FZ-eHM"/>
+                        <constraint firstItem="AKB-Wp-0L5" firstAttribute="leading" secondItem="AkN-Tq-6b8" secondAttribute="leading" id="fMe-14-5mG"/>
+                        <constraint firstAttribute="bottom" secondItem="AKB-Wp-0L5" secondAttribute="bottom" id="ojq-y1-jLq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rrG-gn-Vec">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alamofireSure" translatesAutoresizingMaskIntoConstraints="NO" id="gAY-1J-I8V">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v8y-sB-255">
+                            <rect key="frame" x="16" y="655" width="361" height="52"/>
+                            <color key="backgroundColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52.030000000000001" id="lo9-4N-zPP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="立即登录"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="26"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="_speedLogin:" destination="OGO-Us-SrU" eventType="touchUpInside" id="G3Z-kM-63i"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="v8y-sB-255" secondAttribute="bottom" constant="145.00999999999999" id="6Im-x9-uTK"/>
+                        <constraint firstAttribute="trailing" secondItem="v8y-sB-255" secondAttribute="trailing" constant="16.02" id="nNH-ar-qQU"/>
+                        <constraint firstItem="v8y-sB-255" firstAttribute="leading" secondItem="rrG-gn-Vec" secondAttribute="leading" constant="16.010000000000002" id="vOH-26-Azc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="eL6-Gc-k4z"/>
+            <constraints>
+                <constraint firstItem="rrG-gn-Vec" firstAttribute="leading" secondItem="eL6-Gc-k4z" secondAttribute="leading" id="2fO-PA-WGh"/>
+                <constraint firstItem="eL6-Gc-k4z" firstAttribute="trailing" secondItem="IkJ-kn-iep" secondAttribute="trailing" constant="15.99" id="B6X-fr-xFE"/>
+                <constraint firstItem="eL6-Gc-k4z" firstAttribute="trailing" secondItem="AkN-Tq-6b8" secondAttribute="trailing" constant="16.02" id="DWA-at-vkQ"/>
+                <constraint firstAttribute="bottom" secondItem="rrG-gn-Vec" secondAttribute="bottom" id="JVs-oN-N1e"/>
+                <constraint firstItem="eL6-Gc-k4z" firstAttribute="trailing" secondItem="rrG-gn-Vec" secondAttribute="trailing" id="LfT-Jt-33z"/>
+                <constraint firstItem="SKs-6v-kyT" firstAttribute="leading" secondItem="eL6-Gc-k4z" secondAttribute="leading" id="ROV-YE-Hkm"/>
+                <constraint firstItem="eL6-Gc-k4z" firstAttribute="bottom" secondItem="IkJ-kn-iep" secondAttribute="bottom" constant="200.00999999999999" id="S6F-xF-uXj"/>
+                <constraint firstItem="AkN-Tq-6b8" firstAttribute="leading" secondItem="eL6-Gc-k4z" secondAttribute="leading" constant="15.99" id="SU0-0i-HXB"/>
+                <constraint firstItem="rrG-gn-Vec" firstAttribute="trailing" secondItem="eL6-Gc-k4z" secondAttribute="trailing" id="ZSp-hK-LoX"/>
+                <constraint firstAttribute="bottom" secondItem="SKs-6v-kyT" secondAttribute="bottom" id="fCO-1x-zEZ"/>
+                <constraint firstAttribute="bottom" secondItem="rrG-gn-Vec" secondAttribute="bottom" id="iIA-YH-mo4"/>
+                <constraint firstItem="IkJ-kn-iep" firstAttribute="leading" secondItem="eL6-Gc-k4z" secondAttribute="leading" constant="16.010000000000002" id="niu-01-46j"/>
+                <constraint firstItem="eL6-Gc-k4z" firstAttribute="trailing" secondItem="SKs-6v-kyT" secondAttribute="trailing" id="piE-61-1nN"/>
+                <constraint firstItem="rrG-gn-Vec" firstAttribute="top" secondItem="bc8-wa-irG" secondAttribute="top" id="t4B-GA-SxL"/>
+                <constraint firstItem="AkN-Tq-6b8" firstAttribute="top" secondItem="IkJ-kn-iep" secondAttribute="bottom" constant="39.969999999999999" id="wFQ-8l-jO3"/>
+                <constraint firstItem="SKs-6v-kyT" firstAttribute="top" secondItem="bc8-wa-irG" secondAttribute="top" id="wSx-Dm-Xji"/>
+                <constraint firstItem="rrG-gn-Vec" firstAttribute="leading" secondItem="bc8-wa-irG" secondAttribute="leading" id="yVV-wN-kqU"/>
+                <constraint firstItem="rrG-gn-Vec" firstAttribute="top" secondItem="bc8-wa-irG" secondAttribute="top" id="zyA-KE-Odh"/>
+            </constraints>
+            <point key="canvasLocation" x="87.786259541984734" y="-12.67605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alamofireSure" width="390" height="844"/>
+        <image name="applogoRelationDelete_7" width="358" height="54"/>
+        <image name="searchJiaoWelcome" width="358" height="54"/>
+    </resources>
+</document>

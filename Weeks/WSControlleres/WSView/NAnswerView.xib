@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="OGO-Us-SrU" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="I0q-JT-qmD" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="B3p-NO-dfe" customClass="NAnswerView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLB-C5-zIk">
+                    <rect key="frame" x="17.999999999999996" y="12" width="40.666666666666657" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21.98" id="H6I-uX-I7Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <color key="textColor" red="0.5294117647058824" green="0.7490196078431373" blue="0.4627450980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="PgD-lW-dHh"/>
+            <constraints>
+                <constraint firstItem="RLB-C5-zIk" firstAttribute="top" secondItem="B3p-NO-dfe" secondAttribute="top" constant="11.99" id="H4F-Ag-iY5"/>
+                <constraint firstItem="RLB-C5-zIk" firstAttribute="leading" secondItem="B3p-NO-dfe" secondAttribute="leading" constant="17.99" id="hOc-cD-fvm"/>
+            </constraints>
+            <connections>
+                <outlet property="headerLabel" destination="RLB-C5-zIk" id="VpP-kv-JHG"/>
+            </connections>
+            <point key="canvasLocation" x="-34" y="-48"/>
+        </collectionReusableView>
+    </objects>
+</document>
